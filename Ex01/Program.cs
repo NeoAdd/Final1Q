@@ -1,4 +1,6 @@
-﻿string[] array1 = {"qwe", "qwerty23", "12", "world", "res"};
+﻿
+string[] array1 = { "yt", "6969", "Hello", "Hel", "0001", "world", "1" };
+
 string[] array2 = new string[array1.Length];
 
 void SecondArrayWithIF(string[] array1, string[] array2)
@@ -6,10 +8,10 @@ void SecondArrayWithIF(string[] array1, string[] array2)
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
     {
-    if(array1[i].Length <= 3)
+        if (array1[i].Length <= 3)
         {
-        array2[count] = array1[i];
-        count++;
+            array2[count] = array1[i];
+            count++;
         }
     }
 }
@@ -23,4 +25,3 @@ void PrintArray(string[] array)
 }
 SecondArrayWithIF(array1, array2);
 PrintArray(array2);
-Console.WriteLine(array2[1]);
